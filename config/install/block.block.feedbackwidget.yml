@@ -1,0 +1,25 @@
+uuid: cfdfd35c-9ba0-41dc-9253-90a680b672b3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8abd43bc-2c42-4472-b4c0-f94dbadb814c'
+  module:
+    - block_content
+  theme:
+    - thesource_bootstrap
+id: feedbackwidget
+theme: thesource_bootstrap
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:8abd43bc-2c42-4472-b4c0-f94dbadb814c'
+settings:
+  id: 'block_content:8abd43bc-2c42-4472-b4c0-f94dbadb814c'
+  label: 'Feedback widget'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

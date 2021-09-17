@@ -1,4 +1,3 @@
-{% extends "block--bare.html.twig" %}
 {#
 /**
 * @file
@@ -20,17 +19,88 @@
   <div class="col-sm-6">
     {% if site_logo %}
       <a href="https://thesource.nrel.gov" title="{{ 'TheSource Home'|t }}" rel="home">
-        <img class="logo "src="{{ site_logo }}" alt="{{ 'TheSource Home'|t }}" />
+        <div class="logo"></div>
       </a>
     {% else %}
       <a href="https://thesource.nrel.gov"><div class="logo"></div></a>
     {% endif %}
   </div>
 
-  <div class="col-sm-6 col-sm-pull-6">
-    {% if site_name %}
-      <a class="app-name" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
-    {% endif %}
+  <div class="d-md-none">
+    <button
+      type="button"
+      class="navbar-toggler searchbar-toggle"
+      data-toggle="collapse"
+      data-target="#searchbar-collapse"
+      role="button" aria-expanded="false" aria-controls="searchbar-collapse">
+
+      <i class="fa fa-search"></i><span class="sr-only">Toggle Search</span>
+    </button>
   </div>
+
+  <!-- desktop menu -->
+  <div class="col-md-6 d-flex justify-content-end">
+    <nav class="navbar navbar-expand-md">
+      <div class="d-none d-md-inline">
+        <form
+          method="get"
+          class="searchbar-form form-inline ThunderstoneForm"
+          id="ThunderstoneSearchForm"
+          action="https://search3.nrel.gov/texis/search/">
+
+          <div class="form-group">
+            <label for="query" class="sr-only">Search theSOURCE</label>
+            <input TYPE="hidden" NAME="pr" value="metasource">
+            <input type="text" id="query" name="query"
+                   maxlength="2047"
+                   placeholder="Search theSOURCE"
+                   class="form-control">
+
+            <button type="submit" class="btn btn-default">Search</button>
+          </div>
+        </form>
+      </div>
+    </nav>
+  </div>
+  <!-- desktop menu -->
+
+  <!-- mobile menu -->
+  <div class="col-md-6 d-flex justify-content-center mb-3">
+    <div class="d-md-none">
+      <div class="collapse navbar-collapse" id="searchbar-collapse">
+        <form
+          method="get"
+          class="searchbar-form form-inline ThunderstoneForm"
+          id="ThunderstoneSearchForm"
+          action="https://search3.nrel.gov/texis/search/">
+
+          <div class="form-group">
+            <label for="query" class="sr-only">Search theSOURCE</label>
+            <input TYPE="hidden" NAME="pr" value="metasource">
+            <input type="text" id="query" name="query"
+                   maxlength="2047"
+                   placeholder="Search theSOURCE"
+                   class="form-control">
+
+            <button type="submit" class="btn btn-default">Search</button>
+          </div>
+        </form>
+
+
+        <form action="https://thesource.nrel.gov/phonebook/index.html" method="post"
+              class="searchbar-form form-inline">
+          <div class="form-group">
+            <label for="emp-search" class="sr-only">Search Employee Directory</label>
+            <input id="emp-search" type="text" placeholder="Search Employee Directory"
+                   name="zzsearch" class="form-control">
+            <button type="submit" class="btn btn-default">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- end mobile menu -->
+
 
 {% endblock %}

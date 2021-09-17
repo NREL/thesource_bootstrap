@@ -1,0 +1,22 @@
+uuid: a08e38f9-74c4-436c-b9b9-fc53125d8519
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - thesource_bootstrap
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: thesource_bootstrap_messages
+theme: thesource_bootstrap
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

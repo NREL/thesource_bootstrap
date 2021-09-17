@@ -1,0 +1,25 @@
+uuid: bebb4200-9900-4967-9778-8a8c04cb6d0a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4b828764-94f3-4e41-ae98-3cc186e60078'
+  module:
+    - block_content
+  theme:
+    - thesource_bootstrap
+id: ppfmainnavigation
+theme: thesource_bootstrap
+region: secondary_menu
+weight: 0
+provider: null
+plugin: 'block_content:4b828764-94f3-4e41-ae98-3cc186e60078'
+settings:
+  id: 'block_content:4b828764-94f3-4e41-ae98-3cc186e60078'
+  label: 'PPF main navigation'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

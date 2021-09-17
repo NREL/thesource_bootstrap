@@ -38,103 +38,67 @@
  * @see template_process()
  */
 #}
-{%
-  set classes = [
-    'block',
-    'block-' ~ configuration.provider|clean_class,
-    'block-' ~ plugin_id|clean_class,
-    'clearfix',
-  ]
-%}
-<section{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {% if label %}
-    <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
-  {% endif %}
-  {{ title_suffix }}
-
-  {% block content %}
-    {{ content }}
-  {% endblock %}
-</section>
-
 <!-- == TOP NAVIGATION == -->
 <!--stopindex-->
-<div class="navbar-wrapper corporate-topnav" id="topnav">
-  <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container">
+<!--stopindex-->
+{%
+  set navbar_classes = [
+  'navbar',
+  'navbar-expand-md',
+  theme.settings.navbar_background|replace({ "bg": "navbar" }),
+  theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
+]
+%}
+<div id="topnav" class="navbar-wrapper corporate-topnav">
+  <nav class="{{ navbar_attributes.addClass(navbar_classes) }}">
+    <div class="{{ container }}">
 
-      <div class="row">
-		    <div class="col-sm-6">
-          <ul class="nav navbar-nav navbar-left">
-
-            <li class="dropdown" data-topnav="organizations"><a href="https://thesource.nrel.gov" class="dropdown-toggle" data-toggle="dropdown">Organizations <span class="fa fa-angle-down hidden-xs"></span></a>
-
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="http://thesource.nrel.gov/communications/">Communications &amp; Public Affairs</a></li>
-                <li><a href="http://thesource.nrel.gov/director/">Director</a></li>
-					      <li><a href="https://thesourcee.nrel.gov/eshq/ ">Environment, Safety, Health &amp; Quality</a></li>
-                <li><a href="http://thesource.nrel.gov/general-counsel/">General Counsel</a></li>
-                <li><a href="http://thesource.nrel.gov/hr/">Human Resources</a></li>
-					      <li><a href="http://thesource.nrel.gov/its/">Information Technology Services</a></li>
-                <li><a href="http://thesource.nrel.gov/internal-audit/">Internal Audit</a></li>
-                <li><a href="https://sp2013.nrel.gov/sites/ocfo">Office of the CFO</a></li>
-                <li><a href="http://thesource.nrel.gov/ombuds/">Ombuds</a></li>
-                <li><a href="https://thesourcee.nrel.gov/procurement">Procurement</a></li>
-                <li><a href="https://thesourcee.nrel.gov/science-technology/">Science &amp; Technology</a></li>
-                <li><a href="http://thesource.nrel.gov/security/">Security &amp; Emergency Preparedness</a></li>
-                <li><a href="https://thesourcee.nrel.gov/site-operations/index.html">Site Operations</a></li>
-                <li><a href="http://thesource.nrel.gov/techtransfer/">Technology Transfer</a></li>
-              </ul>
-            </li>
-
-            <li class="dropdown" data-topnav="tools"><a href="https://thesource.nrel.gov" class="dropdown-toggle" data-toggle="dropdown">Business Tools <span class="fa fa-angle-down hidden-xs"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="https://myaccess.nrel.gov/workday">Workday</a></li>
-                <li><a href="https://myaccess.nrel.gov/travelexpense">Concur</a></li>
-						    <li><a href="https://sp2013.nrel.gov/sites/BD/Pages/Home.aspx">Business and Program Development Portal</a></li>
-                <li><a href="https://epmprod.nrel.gov:4443/workspace/index.jsp">Enterprise Project Planning (EPP)</a></li>
-                <li><a href="https://passagepoint.nrel.gov/pp/wi1/">Expected Visitor's Notification</a></li>
-                <li><a href="https://nrel.service-now.com/ess/">IT Self Service</a></li>
-                <li><a href="https://nrel.plateau.com/learning/user/login.jsp">Learning Gateway</a></li>
-                <li><a href="https://nquire.nrel.gov:4447/analytics/saw.dll?dashboard&amp;PortalPath=%2Fshared%2FDashboards%2F_portal%2FNQuIRE%20Reporting%20Hub">NQuIRE</a></li>
-                <li><a href="https://pricingtool.nrel.gov/">OCFO Pricing Tool (CDW)</a></li>
-
-                <li><a href="https://erp.nrel.gov/">Oracle EBS</a></li>
-                <li><a href="https://sp2013.nrel.gov/Pages/Home.aspx">ThePOINT</a></li>
-                <li><a href="http://thesource.nrel.gov/business-tools/">See All</a></li>
-              </ul>
-            </li>
-
-
-            <li><a href="http://thesource.nrel.gov/src-index/">A-Z Index</a></li>
-
+      <ul class="navbar-nav">
+        <li class="dropdown nav-item" data-topnav="organizations"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Organizations </a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="nav-item"><a href="https://thesource.nrel.gov/communications/" class="nav-link">Communications</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/director/" class="nav-link">Director</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/inclusion/index.html" class="nav-link">Diversity, Equity, &amp; Inclusion</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/esh/index.html" class="nav-link">Environment, Safety, Health, &amp; Quality</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/general-counsel/" class="nav-link">General Counsel</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/hr/" class="nav-link">Human Resources</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/its/index.html" class="nav-link">Information Technology Services</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/ipo/" class="nav-link">Innovation, Partnering, &amp; Outreach</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/internal-audit/"  class="nav-link">Internal Audit</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/ipid/index.html"  class="nav-link">Institutional Planning, Integration, &amp; Development</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/security/" class="nav-link">Lab Protection</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/mcst/index.html" class="nav-link">Materials, Chemical &amp; Computational Science</a><li>
+            <li class="nav-item"><a href="https://sp2013.nrel.gov/sites/ocfo" class="nav-link">Office of the CFO</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/ombuds/" class="nav-link">Ombuds</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/procurement/index.html" class="nav-link">Procurement</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/science-technology/index.html" class="nav-link">Science &amp; Technology</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/site-operations/index.html" class="nav-link">Site Operations</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/techtransfer/" class="nav-link">Technology Transfer</a></li>
           </ul>
-        </div>
+        </li>
+        <li class="dropdown nav-item" data-topnav="tools"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Business Tools </a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="nav-item"><a href="https://workday.nrel.gov/" class="nav-link">Workday</a></li>
+            <li class="nav-item"><a href="https://travelexpense.nrel.gov" class="nav-link">Concur</a></li>
+            <li class="nav-item"><a href="https://epp.nrel.gov/" class="nav-link">Enterprise Project Planning (EPP)</a></li>
+            <li class="nav-item"><a href="https://visitor.nrel.gov/safeselfservice/" class="nav-link">Expected Visitor Notification</a></li>
+            <li class="nav-item"><a href="https://itserviceportal.nrel.gov" class="nav-link">IT Service Portal</a></li>
+            <li class="nav-item"><a href="https://performancemanager4.successfactors.com/sf/learning?company=nrel&amp;loginMethod=SSO" class="nav-link">Learning Gateway</a></li>
+            <li class="nav-item"><a href="https://nquire.nrel.gov/" class="nav-link">NQuIRE</a></li>
+            <li class="nav-item"><a href="https://pubs.nrel.gov/" class="nav-link">NREL Publishing Tracker</a></li>
+            <li class="nav-item"><a href="https://pricingtool.nrel.gov/" class="nav-link">OCFO Pricing Tool (CDW)</a></li>
+            <li class="nav-item"><a href="https://erp.nrel.gov" class="nav-link">Oracle EBS</a></li>
+            <li class="nav-item"><a href="https://asiq.nrel.gov/" class="nav-link">Purchase Requests (ASIQ)</a>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/institutional-investments/index.html" class="nav-link">Request NREL Funding</a></li>
+            <li class="nav-item"><a href="https://sp2013.nrel.gov/Pages/Home.aspx" class="nav-link">ThePOINT</a></li>
+            <li class="nav-item"><a href="https://thesource.nrel.gov/business-tools/index.html" class="nav-link">See All</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="https://thesource.nrel.gov/src-index/index.html" class="nav-link">A-Z Index</a></li>
+      </ul>
 
-
-
-        <div class="col-sm-6">
-          <div class="navbar-collapse collapse hidden-xs">
-
-            <form action="http://thesource.nrel.gov/phonebook/index.php" method="post" class="searchbar-form form-inline" >
-
-              <div class="form-group">
-                <label for="search" class="sr-only">Search Employee Directory</label>
-                <input id="emp-search-mobile" type="text" placeholder="Search Employee Directory" name="zzsearch" class="form-control">
-      					<input name="attribute" type="hidden" value="name">
-      					<input name="criterion" type="hidden" value="contains">
-
-                <button type="submit" class="btn btn-default">Search</button>
-              </div>
-            </form>
-
-          </div>
-        </div>
-
-      </div>
     </div>
-  </div>
+  </nav>
 </div>
 <!--startindex-->
 <!-- == END TOP NAVIGATION == -->

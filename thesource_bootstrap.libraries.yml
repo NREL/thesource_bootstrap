@@ -1,14 +1,15 @@
-bootstrap:
+global-scripts:
   js:
-    /libraries/bootstrap/dist/js/bootstrap.bundle.min.js: {}
-  css:
-    component:
-      /libraries/bootstrap/dist/css/bootstrap.min.css: {}
+    js/global.js : {}
+    js/app.min.js : {}
+    js/jquery.iconomatic.min.js : {}
 
 global-styling:
-   css:
+  css:
     theme:
-      css/source.complete.css : {}
+      css/source.complete.min.css : {}
+      css/style.css: {}
+      css/colors.css: {}
 
 nrel_droid_roboto:
   version: VERSION
@@ -36,7 +37,19 @@ nrel_noto:
         }
       }
 
+subsite-js:
+  js:
+    js/subsite/app.min.js : {}
+
+
 # libraries-override
+bootstrap:
+  js:
+    /libraries/bootstrap/dist/js/bootstrap.bundle.min.js: {}
+  css:
+    component:
+      /libraries/bootstrap/dist/css/bootstrap.min.css: {}
+
 fontawesome:
   header: true
   version: VERSION

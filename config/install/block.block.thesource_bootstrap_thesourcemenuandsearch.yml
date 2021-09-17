@@ -1,0 +1,25 @@
+uuid: 4c6ba8f1-db9d-4ddb-961c-1aa370efd252
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2805202e-8d7e-4c04-935a-fc97e27c9cb2'
+  module:
+    - block_content
+  theme:
+    - thesource_bootstrap
+id: thesource_bootstrap_thesourcemenuandsearch
+theme: thesource_bootstrap
+region: primary_menu
+weight: -7
+provider: null
+plugin: 'block_content:2805202e-8d7e-4c04-935a-fc97e27c9cb2'
+settings:
+  id: 'block_content:2805202e-8d7e-4c04-935a-fc97e27c9cb2'
+  label: 'theSource menu and search'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

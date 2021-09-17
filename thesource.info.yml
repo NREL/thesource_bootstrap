@@ -1,14 +1,19 @@
 name: thesource
 type: theme
-description: Unbiased, scientific, authentic, trustworthy, and authoritative.
+description: theSource Bootstrap Barrio SubTheme.
 package: communications
-core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: bootstrap_barrio
+
 libraries:
   - thesource/global-styling
-  - thesource/bootstrap-scripts
   - thesource/font-awesome
-  - thesource/fonts
-base theme: bootstrap
+
+libraries-override:
+  bootstrap_barrio/fontawesome: thesource/fontawesome
+
+logo: 'themes/contrib/thesource/logo.svg'
+screenshot: thesource_screenshot.png
 
 regions:
   navigation: 'Navigation'

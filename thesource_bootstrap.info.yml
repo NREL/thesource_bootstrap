@@ -1,0 +1,35 @@
+name: theSource Bootstrap
+type: theme
+description: theSource Bootstrap Barrio SubTheme.
+package: communications
+core_version_requirement: ^8 || ^9
+base theme: bootstrap_barrio
+
+libraries:
+  - thesource_bootstrap/bootstrap
+  - thesource_bootstrap/font-awesome
+  - thesource_bootstrap/global-scripts
+  - thesource_bootstrap/global-styling
+  - thesource_bootstrap/subsite-js
+
+libraries-override:
+  bootstrap_barrio/bootstrap: thesource_bootstrap/bootstrap
+  bootstrap_barrio/fontawesome: thesource_bootstrap/fontawesome
+
+logo: 'logo.svg'
+screenshot: 'themes/contrib/thesource_bootstrap/thesource_screenshot.png'
+
+regions:
+  top_header: 'Top header'
+  primary_menu: 'Primary menu'
+  header: Header
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  help: 'Help'
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer

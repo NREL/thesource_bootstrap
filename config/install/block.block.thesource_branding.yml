@@ -1,0 +1,25 @@
+uuid: a60b5fb4-2cc6-4c60-86de-8b5f89ebecd0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - thesource
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: thesource_branding
+theme: thesource
+region: top_header
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
