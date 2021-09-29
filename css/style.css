@@ -133,9 +133,102 @@ abbr[data-original-title], abbr[title] {
 .sidenav, .nav {
   width: 100%;
 }
+.row > .sidenav {
+  padding-left: 0;
+  padding-right: 0;
+}
 .navbar-nav {
   float: left;
 }
+.corporate-topnav .navbar-light .navbar-nav .dropdown-menu.show > li > a {
+  display: block !important;
+}
+.navbar-light .navbar-nav > li ul.show > a:hover, .navbar-light .navbar-nav > li ul.show > a:focus {
+  background-color: #ccc;
+  color: #000;
+}
+.navbar-light .navbar-nav .show.dropdown-menu > li > a {
+  background-color: #282e2e;
+  color: #62d2ff;
+  padding: 10px 10px 10px 15px;
+}
+
+@media (min-width: 768px) {
+  .navbar-light .navbar-nav .show.dropdown-menu > li > a {
+    background-color: #5e6a71;
+    color: #fff;
+  }
+}
+
+.navbar-light .navbar-nav .show.dropdown-menu > li > a:hover, .navbar-light .navbar-nav .show.dropdown-menu > li > a:focus {
+  background-color: #0B5E90;
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .show.dropdown-menu > li > a .fa-home {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.navbar-light .navbar-nav .show.dropdown-menu > li > a {
+  position: relative;
+}
+.corporate-topnav .navbar-light .navbar-nav .show.dropdown-menu > li > a {
+  background-color: #dddedf;
+  display: block !important;
+  color: #004677;
+}
+
+.corporate-topnav .navbar-light .navbar-nav .show.dropdown-menu a.dropdown-item:after {
+  content: '\f0da';
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0px 0px 0px 10px;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .corporate-topnav .navbar-light .navbar-nav .show.dropdown-menu > li > a {
+    background-color: #dddedf;
+    color: #004677;
+  }
+}
+
+.corporate-topnav .navbar-light .navbar-nav .show.dropdown-menu > li > a:hover, .corporate-topnav .navbar-light .navbar-nav .show.dropdown-menu > li > a:focus {
+  background-color: #0B5E90;
+  color: #fff;
+}
+.corporate-topnav .navbar-light .navbar-nav .show.dropdown-menu {
+  background-color: #5e6a71;
+  border-top: 0;
+  font-size: 14px;
+  left: 0;
+  position: absolute;
+  right: auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .corporate-topnav .navbar-light .navbar-nav .show.dropdown-menu {
+    display: block;
+    left: auto;
+    width: auto;
+    margin: 0;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  }
+}
+
+
+  @media (min-width: 768px) {
+  .navbar-light .navbar-nav > li ul.show a:hover, .navbar-light .navbar-nav > li ul.show a:focus {
+    background-color: #ccc;
+    border-color: transparent;
+  }
+}
+
 
 .searchbar {
   float: right;

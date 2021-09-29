@@ -49,56 +49,49 @@
   theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
 ]
 %}
-<div id="topnav" class="navbar-wrapper corporate-topnav">
-  <nav class="{{ navbar_attributes.addClass(navbar_classes) }}">
-    <div class="{{ container }}">
+<ul class="navbar-nav">
+  <li class="dropdown" data-topnav="organizations"><a class="dropdown-toggle" href="#" id="navbarDropdownOrgs" role="button" data-bs-toggle="dropdown" aria-expanded="false">Organizations </a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="navbarDropdownOrgs">
+      <li><a href="https://thesource.nrel.gov/communications/" class="dropdown-item">Communications</a></li>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/director/">Director</a></li>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/inclusion/index.html">Diversity, Equity, &amp; Inclusion</a></li>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/esh/index.html">Environment, Safety, Health, &amp; Quality</a></li>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/general-counsel/">General Counsel</a></li>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/hr/">Human Resources</a></li>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/its/index.html">Information Technology Services</a></li>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/ipo/">Innovation, Partnering, &amp; Outreach</a></li>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/internal-audit/" >Internal Audit</a></li>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/ipid/index.html" >Institutional Planning, Integration, &amp; Development</a></li>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/security/">Lab Protection</a></li>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/mcst/index.html">Materials, Chemical &amp; Computational Science</a><li>
+      <li><a class="dropdown-item" href="https://sp2013.nrel.gov/sites/ocfo">Office of the CFO</a></li>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/ombuds/">Ombuds</a></li>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/procurement/index.html">Procurement</a></li>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/science-technology/index.html">Science &amp; Technology</a></li>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/site-operations/index.html">Site Operations</a></li>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/techtransfer/">Technology Transfer</a></li>
+    </ul>
+  </li>
+  <li class="dropdown" data-topnav="tools"><a class="dropdown-toggle" href="#" id="navbarDropdownTools" role="button" data-bs-toggle="dropdown" aria-expanded="false">Business Tools </a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="navbarDropdowTools">
+      <li><a class="dropdown-item" href="https://workday.nrel.gov/">Workday</a></li>
+      <li><a class="dropdown-item" href="https://travelexpense.nrel.gov">Concur</a></li>
+      <li><a class="dropdown-item" href="https://epp.nrel.gov/">Enterprise Project Planning (EPP)</a></li>
+      <li><a class="dropdown-item" href="https://visitor.nrel.gov/safeselfservice/">Expected Visitor Notification</a></li>
+      <li><a class="dropdown-item" href="https://itserviceportal.nrel.gov">IT Service Portal</a></li>
+      <li><a class="dropdown-item" href="https://performancemanager4.successfactors.com/sf/learning?company=nrel&amp;loginMethod=SSO">Learning Gateway</a></li>
+      <li><a class="dropdown-item" href="https://nquire.nrel.gov/">NQuIRE</a></li>
+      <li><a class="dropdown-item" href="https://pubs.nrel.gov/">NREL Publishing Tracker</a></li>
+      <li><a class="dropdown-item" href="https://pricingtool.nrel.gov/">OCFO Pricing Tool (CDW)</a></li>
+      <li><a class="dropdown-item" href="https://erp.nrel.gov">Oracle EBS</a></li>
+      <li><a class="dropdown-item" href="https://asiq.nrel.gov/">Purchase Requests (ASIQ)</a>
+      <li><a class="dropdown-item" href="https://thesource.nrel.gov/institutional-investments/index.html">Request NREL Funding</a></li>
+      <li><a class="dropdown-item" href="https://sp2013.nrel.gov/Pages/Home.aspx">ThePOINT</a></li>
+      <li><a class="dropdown-item"href="https://thesource.nrel.gov/business-tools/index.html">See All</a></li>
+    </ul>
+  </li>
+  <li class="nav-item"><a href="https://thesource.nrel.gov/src-index/index.html">A-Z Index</a></li>
+</ul>
 
-      <ul class="navbar-nav">
-        <li class="dropdown nav-item" data-topnav="organizations"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Organizations </a>
-          <ul class="dropdown-menu" role="menu">
-            <li class="nav-item"><a href="https://thesource.nrel.gov/communications/" class="nav-link">Communications</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/director/" class="nav-link">Director</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/inclusion/index.html" class="nav-link">Diversity, Equity, &amp; Inclusion</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/esh/index.html" class="nav-link">Environment, Safety, Health, &amp; Quality</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/general-counsel/" class="nav-link">General Counsel</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/hr/" class="nav-link">Human Resources</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/its/index.html" class="nav-link">Information Technology Services</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/ipo/" class="nav-link">Innovation, Partnering, &amp; Outreach</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/internal-audit/"  class="nav-link">Internal Audit</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/ipid/index.html"  class="nav-link">Institutional Planning, Integration, &amp; Development</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/security/" class="nav-link">Lab Protection</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/mcst/index.html" class="nav-link">Materials, Chemical &amp; Computational Science</a><li>
-            <li class="nav-item"><a href="https://sp2013.nrel.gov/sites/ocfo" class="nav-link">Office of the CFO</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/ombuds/" class="nav-link">Ombuds</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/procurement/index.html" class="nav-link">Procurement</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/science-technology/index.html" class="nav-link">Science &amp; Technology</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/site-operations/index.html" class="nav-link">Site Operations</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/techtransfer/" class="nav-link">Technology Transfer</a></li>
-          </ul>
-        </li>
-        <li class="dropdown nav-item" data-topnav="tools"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Business Tools </a>
-          <ul class="dropdown-menu" role="menu">
-            <li class="nav-item"><a href="https://workday.nrel.gov/" class="nav-link">Workday</a></li>
-            <li class="nav-item"><a href="https://travelexpense.nrel.gov" class="nav-link">Concur</a></li>
-            <li class="nav-item"><a href="https://epp.nrel.gov/" class="nav-link">Enterprise Project Planning (EPP)</a></li>
-            <li class="nav-item"><a href="https://visitor.nrel.gov/safeselfservice/" class="nav-link">Expected Visitor Notification</a></li>
-            <li class="nav-item"><a href="https://itserviceportal.nrel.gov" class="nav-link">IT Service Portal</a></li>
-            <li class="nav-item"><a href="https://performancemanager4.successfactors.com/sf/learning?company=nrel&amp;loginMethod=SSO" class="nav-link">Learning Gateway</a></li>
-            <li class="nav-item"><a href="https://nquire.nrel.gov/" class="nav-link">NQuIRE</a></li>
-            <li class="nav-item"><a href="https://pubs.nrel.gov/" class="nav-link">NREL Publishing Tracker</a></li>
-            <li class="nav-item"><a href="https://pricingtool.nrel.gov/" class="nav-link">OCFO Pricing Tool (CDW)</a></li>
-            <li class="nav-item"><a href="https://erp.nrel.gov" class="nav-link">Oracle EBS</a></li>
-            <li class="nav-item"><a href="https://asiq.nrel.gov/" class="nav-link">Purchase Requests (ASIQ)</a>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/institutional-investments/index.html" class="nav-link">Request NREL Funding</a></li>
-            <li class="nav-item"><a href="https://sp2013.nrel.gov/Pages/Home.aspx" class="nav-link">ThePOINT</a></li>
-            <li class="nav-item"><a href="https://thesource.nrel.gov/business-tools/index.html" class="nav-link">See All</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a href="https://thesource.nrel.gov/src-index/index.html" class="nav-link">A-Z Index</a></li>
-      </ul>
-
-    </div>
-  </nav>
-</div>
 <!--startindex-->
 <!-- == END TOP NAVIGATION == -->

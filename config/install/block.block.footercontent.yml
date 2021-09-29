@@ -1,22 +1,22 @@
-uuid: 4d430ae2-3fcb-45c3-962a-babce0abe0c8
+uuid: 40e6500f-3cf8-4ecf-823f-4698318da920
 langcode: en
-status: false
+status: true
 dependencies:
   content:
-    - 'block_content:basic:a263ee19-d61f-4a89-8a76-91a31179ad75'
+    - 'block_content:basic:3bef0222-85eb-44e7-8d86-d5a07450b35f'
   module:
     - block_content
   theme:
     - thesource_bootstrap
-id: feedbackwidget
+id: footercontent
 theme: thesource_bootstrap
 region: footer
 weight: 0
 provider: null
-plugin: 'block_content:a263ee19-d61f-4a89-8a76-91a31179ad75'
+plugin: 'block_content:3bef0222-85eb-44e7-8d86-d5a07450b35f'
 settings:
-  id: 'block_content:a263ee19-d61f-4a89-8a76-91a31179ad75'
-  label: 'Feedback widget'
+  id: 'block_content:3bef0222-85eb-44e7-8d86-d5a07450b35f'
+  label: 'Footer Content'
   provider: block_content
   label_display: '0'
   status: true

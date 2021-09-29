@@ -7,7 +7,6 @@ base theme: bootstrap_barrio
 
 libraries:
   - thesource_bootstrap/bootstrap
-  - thesource_bootstrap/font-awesome
   - thesource_bootstrap/global-scripts
   - thesource_bootstrap/global-styling
   - thesource_bootstrap/subsite-js

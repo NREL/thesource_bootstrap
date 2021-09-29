@@ -26,7 +26,7 @@ bootstrap_barrio_system_messages: messages_white
 bootstrap_barrio_table_hover: 1
 bootstrap_barrio_table_style: table-striped
 _core:
-  default_config_hash: XVyjqKNCH498_gwxI4iS26Liob1z90U28Oaw1CHOJzc
+  default_config_hash: CIsuIb36OOZV7zQdgffuZWpa_KtbERo6tsdIOMJt4Oc
 features:
   node_user_picture: true
   comment_user_picture: true

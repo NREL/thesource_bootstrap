@@ -1,0 +1,25 @@
+uuid: 81d1bfd5-4869-497b-9b24-c440d3dc9f32
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:068351f1-e960-4e47-a094-cfc7d51791f4'
+  module:
+    - block_content
+  theme:
+    - thesource_bootstrap
+id: sourcenavigation
+theme: thesource_bootstrap
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'block_content:068351f1-e960-4e47-a094-cfc7d51791f4'
+settings:
+  id: 'block_content:068351f1-e960-4e47-a094-cfc7d51791f4'
+  label: 'Source navigation'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
