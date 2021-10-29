@@ -290,3 +290,32 @@ form label.form-required:after, form h2.form-required:after {
 header .logo {
   margin-left: -6px;
 }
+
+.banner-logo {
+  max-height: 56px;
+}
+
+.searchbar-form {
+  margin-top: 7px;
+}
+
+.banner-logo .col-md-6 {
+  margin-top: 20px;
+}
+
+.navbar {
+  height: 52px;
+}
+
+.navbar .form-group {
+  margin-top: -80px;
+}
+
+.searchbar-form {
+  margin-top: 40px;
+}
+
+.searchbar-form .form-control {
+  font-size: 0.9rem;
+  width: 200px;
+}
