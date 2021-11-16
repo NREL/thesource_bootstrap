@@ -290,3 +290,70 @@ form label.form-required:after, form h2.form-required:after {
 header .logo {
   margin-left: -6px;
 }
+
+/*  Accordions - based on the styles from the source-template.html file, adapted fro use with the lb_tabs accordions. */
+.ui-accordion .ui-accordion-header {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #127BBF;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-image: none;
+    background-color: white;
+    margin-bottom: 12px;
+    padding: 0px;
+    border-radius: 0px;
+    font-weight: 300;
+}
+.ui-accordion .ui-accordion-header span {
+    display: none;
+}
+.ui-accordion .ui-accordion-header a {
+    margin-left:0px;
+    padding: 10px 15px 10px 40px;
+    display: block;
+    width: 100%;
+    background-image: url(../images/icon_plus_blue.svg);
+    color:#127BBF;
+    background-repeat: no-repeat;
+    background-position: 1% center;
+    background-size: 25px 25px;
+}
+.ui-accordion .ui-accordion-header.ui-accordion-header-active {
+    margin-bottom: 0px;
+}
+.ui-accordion .ui-accordion-header.ui-accordion-header-active a {
+    background-image: url('../images/icon_minus.svg');
+    color:#fff;
+    background-color: #127BBF;
+}
+.ui-accordion .ui-accordion-header:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.ui-accordion .ui-accordion-header:last-of-type {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.ui-accordion .ui-accordion-header.ui-accordion-header-active {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.ui-accordion .ui-accordion-header[id^=accordion-faqs-beta],
+.ui-accordion .ui-accordion-header[id^=accordion-roles-and-responsibilities-beta],
+.ui-accordion .ui-accordion-header[id^=accordion-revision-history-beta],
+.ui-accordion .ui-accordion-header[id^=accordion-lessons-learned-beta] {
+    display: none;
+}
+.ui-accordion .ui-accordion-content {
+    margin-bottom: 12px;
+    border-color: #127BBF;
+    border-radius: 0px;
+    font-size: 16px;
+}
+.ui-accordion .ui-accordion-content a {
+    color:#127BBF;
+}
+.ui-accordion .ui-accordion-content.ui-accordion-content-active:last-of-type {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
