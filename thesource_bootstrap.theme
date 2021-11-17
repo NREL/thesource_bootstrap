@@ -42,6 +42,21 @@ function thesource_bootstrap_preprocess_block(&$variables) {
 }
 
 /**
+ * Implements hook_preprocess_layout().
+ */
+function thesource_bootstrap_preprocess_layout(&$variables) {
+    // Add the heightStyle = content option to all lb_tabs accordions so that each accordion is only high enough to
+    // accommodate it's content.
+    if (isset($variables['content']['#theme']) && 'lb_tabs_accordion' == $variables['content']['#theme']) {
+        $idPrefix = !empty($variables['content']['#layout']) ? $variables['content']['#layout']->id() : '';
+        $domId = !empty($variables['content']['#settings']['dom_id']) ? $variables['content']['#settings']['dom_id'] : '';
+        if (!empty($idPrefix) && !empty($domId)) {
+            $variables['content']['#attached']['drupalSettings'][$idPrefix][$domId]['heightStyle'] = 'content';
+        }
+    }
+}
+
+/**
  * Implements hook_preprocess_fieldset() for rendering as a Bootstrap card.
  */
 function thesource_bootstrap_preprocess_thesource_bootstrap_card(&$variables) {
