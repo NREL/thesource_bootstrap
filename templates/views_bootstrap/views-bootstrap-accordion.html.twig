@@ -1,4 +1,14 @@
-<div id="{{ id }}" {{ attributes.addClass(classes, 'accordion') }}>
+{#
+/**
+ * @file views-bootstrap-accordion.html.twig
+ * Default simple view template to display Bootstrap Accordion.
+ *
+ * This override allows accordions to work with Bootstrap 5 - @see
+ * https://www.drupal.org/project/views_bootstrap/issues/3168271
+ *
+ * @ingroup views_templates
+ */
+#}<div id="{{ id }}" {{ attributes.addClass(classes, 'accordion') }}>
   {% set i = 0 %}
   {% set len = rows | length %}
   {% for key, row in rows -%}
