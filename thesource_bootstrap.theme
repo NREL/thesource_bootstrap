@@ -35,7 +35,7 @@ function thesource_bootstrap_preprocess_block(&$variables) {
     }
   }
   if ($variables['base_plugin_id'] == 'block_content') {
-    if ($variables['elements']['#id'] == 'sourcenavigation') {
+    if (!empty($variables['elements']['#id']) && $variables['elements']['#id'] == 'sourcenavigation') {
       $variables['navbar_attributes']['class'] = [];
     }
   }
