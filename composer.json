@@ -56,12 +56,12 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "mkdir -p ../../../../docroot/libraries/bootstrap",
-      "cp -R ../../../../vendor/twbs/bootstrap/dist ../../../../docroot/libraries/bootstrap"
+      "mkdir -p ../../../../web/libraries/bootstrap",
+      "cp -R ../../../../vendor/twbs/bootstrap/dist ../../../../web/libraries/bootstrap"
     ],
     "post-update-cmd": [
-      "mkdir -p ../../../../docroot/libraries/bootstrap",
-      "cp -R ../../../../vendor/twbs/bootstrap/dist ../../../../docroot/libraries/bootstrap"
+      "mkdir -p ../../../../web/libraries/bootstrap",
+      "cp -R ../../../../vendor/twbs/bootstrap/dist ../../../../web/libraries/bootstrap"
     ]
   }
 }
