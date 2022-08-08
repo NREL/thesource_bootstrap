@@ -36,7 +36,7 @@
   "require-dev": {
     "drupal/console": "~1",
     "drush/drush": "*",
-    "drupal/core": "~8"
+    "drupal/core": "~9"
   },
   "repositories": {
     "drupal": {
@@ -63,5 +63,11 @@
       "mkdir -p ../../../../web/libraries/bootstrap",
       "cp -R ../../../../vendor/twbs/bootstrap/dist ../../../../web/libraries/bootstrap"
     ]
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "drupal/console-extend-plugin": true
+    }
   }
 }
