@@ -402,3 +402,11 @@ header .logo {
     font-size: 0.9rem;
     width: 200px;
 }
+.corporate-topnav .navbar-light .navbar-nav .dropdown-menu.show > li > a:after {
+    content: '\f0da';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    margin:0px 0px 0px 10px;
+    text-decoration:none;
+ }
