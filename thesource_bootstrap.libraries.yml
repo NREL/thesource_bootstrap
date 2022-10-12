@@ -11,17 +11,13 @@ global-styling:
       css/style.css: {}
       css/colors.css: {}
 
-nrel_droid_roboto:
+thesource_droid_roboto:
   version: VERSION
   css:
     component:
-      fonts/nrel_droid_roboto.css: {}
+      fonts/thesource_droid_roboto.css: {}
       //fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700%7CRoboto:200,300,400,700: {
-        type: external,
-        attributes: {
-          integrity: sha384-QnsIflc1eU2eeT5hjYkTWjNOvpNItFYfhSxVOFp3KH9+GcOo9Fc/Htu+t9EgjyGh==,
-          crossorigin: anonymous
-        }
+        type: external
       }
 
 nrel_noto:
@@ -30,11 +26,7 @@ nrel_noto:
     component:
       fonts/nrel_noto.css: {}
       //fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i: {
-        type: external,
-        attributes: {
-          integrity: sha384-A2tCw0O/8ey/K5IsvnqCRccfnXmJkPNX06NaiBUkB050ZO9rgPmXs/DpVs2Fr7ye==,
-          crossorigin: anonymous
-        }
+        type: external
       }
 
 subsite-js:
@@ -55,9 +47,5 @@ fontawesome:
   version: VERSION
   js:
     //kit.fontawesome.com/36ddb5b453.js: {
-      type: external,
-      attributes: {
-        integrity: sha256-DlrqMlVovnPLeq6a5aovl8+bDal7OvhVzncT8by5/p4=,
-        crossorigin: anonymous
-      }
+      type: external
     }

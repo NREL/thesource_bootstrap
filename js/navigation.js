@@ -1,4 +1,4 @@
-$(function(){
+(function($){
 
 	$('ul.nav li').each(function(i)
 						{
@@ -17,4 +17,4 @@ $(function(){
 	});
 
 
-})
+})(jQuery);
