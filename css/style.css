@@ -237,6 +237,10 @@ abbr[data-original-title], abbr[title] {
     margin-right: 4px;
 }
 
+.region-top-header .justify-content-center {
+    text-align: left !important;
+    justify-content:  left !important;
+}
 .navbar-nav > section {
     flex-direction: column;
 }
