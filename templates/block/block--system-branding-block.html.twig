@@ -15,92 +15,58 @@
 */
 #}
 {% block content %}
-
-  <div class="col-sm-6">
-    {% if site_logo %}
-      <a href="https://thesource.nrel.gov" title="{{ 'TheSource Home'|t }}" rel="home">
-        <div class="logo"></div>
-      </a>
-    {% else %}
-      <a href="https://thesource.nrel.gov"><div class="logo"></div></a>
-    {% endif %}
+<div class="col-md-6">
+  <div class="logo">
+    <a href="https://www.nrel.gov"><svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="146.117" height="30" viewBox="0 0 146.117 30"><g transform="translate(-14.995 -63.193)"><g transform="translate(14.995 63.297)"><path d="M71.713,125.119a17.723,17.723,0,0,1-2.773,1.438l9.128,0,0-9.12a15.875,15.875,0,0,1-1.428,2.763l-1.82-1.815a13.645,13.645,0,0,1-2.152,2.767,13.84,13.84,0,0,1-2.772,2.152Z" transform="translate(-47.358 -96.767)" fill="#0079c2" fill-rule="evenodd"></path><path d="M68.825,112.365A10.089,10.089,0,0,1,63.9,117.29l2.483,2.479a13.262,13.262,0,0,0,2.79-2.137,13.555,13.555,0,0,0,2.14-2.786Z" transform="translate(-44.332 -93.727)" fill="#0079c2" fill-rule="evenodd"></path><path d="M88.709,100.109a15.85,15.85,0,0,0-.006-6.96l-1.227,0a14.048,14.048,0,0,1,0,6.95Z" transform="translate(-58.477 -81.734)" fill="#0079c2" fill-rule="evenodd"></path><path d="M80.478,100.107a13.512,13.512,0,0,0-.006-6.958l-3.505,0a10.063,10.063,0,0,1,0,6.959Z" transform="translate(-52.172 -81.734)" fill="#0079c2" fill-rule="evenodd"></path><path d="M76.65,69.812a17.833,17.833,0,0,1,1.433,2.77l0-9.121-9.126-.007a18.18,18.18,0,0,1,2.773,1.438l-1.819,1.819a14.17,14.17,0,0,1,4.923,4.919Z" transform="translate(-47.367 -63.454)" fill="#0079c2" fill-rule="evenodd"></path><path d="M63.911,75.292a10.046,10.046,0,0,1,2.9,2.027,10.189,10.189,0,0,1,2.021,2.9l2.478-2.48a13.256,13.256,0,0,0-2.131-2.786,13.416,13.416,0,0,0-2.785-2.144Z" transform="translate(-44.341 -69.064)" fill="#0079c2" fill-rule="evenodd"></path><path d="M51.639,64.1a15.965,15.965,0,0,0-6.962,0l.011,1.232a14.151,14.151,0,0,1,6.951,0Z" transform="translate(-32.802 -63.614)" fill="#0079c2" fill-rule="evenodd"></path><path d="M51.652,68.807a13.522,13.522,0,0,0-6.961,0v3.521a10.065,10.065,0,0,1,6.956,0Z" transform="translate(-32.81 -66.392)" fill="#0079c2" fill-rule="evenodd"></path><path d="M18.254,71.65a14,14,0,0,1,4.927-4.927L21.361,64.91a16.285,16.285,0,0,1,2.759-1.435L15,63.469l0,9.128a17.235,17.235,0,0,1,1.441-2.765Z" transform="translate(-14.995 -63.463)" fill="#0079c2" fill-rule="evenodd"></path><path d="M29.291,72.823A12.767,12.767,0,0,0,26.5,74.957a13.408,13.408,0,0,0-2.132,2.792l2.481,2.483a10.077,10.077,0,0,1,4.924-4.925Z" transform="translate(-20.617 -69.075)" fill="#0079c2" fill-rule="evenodd"></path><path d="M20.348,93.149a13.321,13.321,0,0,0,.008,6.955l3.507,0a10.058,10.058,0,0,1,0-6.955Z" transform="translate(-17.932 -81.734)" fill="#0079c2" fill-rule="evenodd"></path><path d="M15.647,93.149a15.8,15.8,0,0,0,0,6.954h1.233a14.291,14.291,0,0,1,0-6.951Z" transform="translate(-15.154 -81.734)" fill="#0079c2" fill-rule="evenodd"></path><path d="M16.442,120.177a16.665,16.665,0,0,1-1.435-2.77v9.133l9.125,0a16.629,16.629,0,0,1-2.769-1.439l1.826-1.815a13.858,13.858,0,0,1-4.926-4.927Z" transform="translate(-15.002 -96.752)" fill="#0079c2" fill-rule="evenodd"></path><path d="M24.36,114.837a13.456,13.456,0,0,0,2.136,2.794,13.272,13.272,0,0,0,2.786,2.129l2.486-2.485a9.916,9.916,0,0,1-2.9-2.016,10.023,10.023,0,0,1-2.022-2.907Z" transform="translate(-20.613 -93.72)" fill="#0079c2" fill-rule="evenodd"></path><path d="M44.7,125.423a10.12,10.12,0,0,0,6.952,0v3.509a13.173,13.173,0,0,1-6.951,0Z" transform="translate(-32.814 -101.558)" fill="#0079c2" fill-rule="evenodd"></path><path d="M44.7,135.93a14.138,14.138,0,0,0,6.948,0l0,1.23a15.678,15.678,0,0,1-6.955,0Z" transform="translate(-32.812 -107.864)" fill="#0079c2" fill-rule="evenodd"></path></g><path d="M109.66,63.193h4.689l15.416,20.742V63.193h4.974v30h-4.233l-15.87-21.342V93.193H109.66Z" transform="translate(-58.158)" fill="#0079c2"></path><path d="M195.418,78.063h4.352c3.744,0,6.126-1.971,6.126-5.013v-.086c0-3.214-2.3-4.971-6.169-4.971h-7.615v25.2H186.88v-30h13.272c3.743,0,6.679,1.113,8.595,3a9.112,9.112,0,0,1,2.468,6.473v.085c0,4.929-2.937,7.886-7.1,9.086l8.04,11.357h-6.169Z" transform="translate(-105.602)" fill="#0079c2"></path><path d="M261.3,63.193H284.85v4.714H267.19v7.8H281.6V80.42H267.19v8.059h17.9v4.714H261.3Z" transform="translate(-151.284)" fill="#0079c2"></path><path d="M336.033,63.193h5.888v25.2h16.318v4.8H336.033Z" transform="translate(-197.128)" fill="#0079c2"></path></g></svg></a>
+    <a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="176.85" height="22.26" viewBox="0 0 176.85 22.26"><g transform="translate(-1.23 -2.1)"><path d="M7.77.27a5.81,5.81,0,0,0,2.79-.66V-2.37a4.857,4.857,0,0,1-2.25.54A2.3,2.3,0,0,1,5.7-4.41v-9.06h4.92v-2.04H5.7v-4.68H3.39v4.68H1.23v2.04H3.39v9.36C3.39-.96,5.28.27,7.77.27ZM14.7,0h2.31V-8.88a4.563,4.563,0,0,1,4.65-4.86c2.73,0,4.29,1.8,4.29,4.68V0h2.31V-9.63c0-3.69-2.19-6.21-5.94-6.21a5.873,5.873,0,0,0-5.31,3.03V-21.9H14.7ZM39.96.36a8.006,8.006,0,0,0,6.39-2.91L44.91-3.84a6.419,6.419,0,0,1-4.89,2.19A5.416,5.416,0,0,1,34.56-6.9h12.3a6.025,6.025,0,0,0,.03-.75c0-4.53-2.64-8.19-7.23-8.19-4.29,0-7.44,3.6-7.44,8.07v.06A7.709,7.709,0,0,0,39.96.36Zm-5.4-8.97c.3-3.03,2.34-5.28,5.04-5.28,3.09,0,4.71,2.46,4.95,5.28ZM58.35.3c4.53,0,7.71-2.34,7.71-6.51v-.06c0-3.66-2.4-5.19-6.66-6.3-3.63-.93-4.53-1.38-4.53-2.76v-.06c0-1.02.93-1.83,2.7-1.83a9.854,9.854,0,0,1,5.46,2.07l2.4-3.48a12.156,12.156,0,0,0-7.8-2.67c-4.29,0-7.35,2.52-7.35,6.33v.06c0,4.17,2.73,5.34,6.96,6.42,3.51.9,4.23,1.5,4.23,2.67v.06c0,1.23-1.14,1.98-3.03,1.98a9.634,9.634,0,0,1-6.27-2.55L49.44-3.06A13.363,13.363,0,0,0,58.35.3ZM80.28.36A10.859,10.859,0,0,0,91.47-10.5v-.06a10.759,10.759,0,0,0-11.13-10.8A10.859,10.859,0,0,0,69.15-10.5v.06A10.759,10.759,0,0,0,80.28.36Zm.06-4.26a6.38,6.38,0,0,1-6.36-6.6v-.06a6.28,6.28,0,0,1,6.3-6.54,6.38,6.38,0,0,1,6.36,6.6v.06A6.28,6.28,0,0,1,80.34-3.9Zm24,4.23c5.64,0,9.21-3.12,9.21-9.48V-21h-4.62V-8.97c0,3.33-1.71,5.04-4.53,5.04S99.87-5.7,99.87-9.12V-21H95.25V-9C95.25-2.82,98.7.33,104.34.33ZM118.26,0h4.62V-6.72h3.63L131.01,0h5.4l-5.13-7.5a6.522,6.522,0,0,0,4.5-6.51v-.06a6.592,6.592,0,0,0-1.8-4.8A8.369,8.369,0,0,0,127.86-21h-9.6Zm4.62-10.8v-6.03h4.59c2.25,0,3.63,1.02,3.63,3v.06c0,1.77-1.29,2.97-3.54,2.97ZM149.79.36a10.734,10.734,0,0,0,8.61-3.75l-2.94-2.97c-1.65,1.5-3.12,2.46-5.52,2.46-3.6,0-6.09-3-6.09-6.6v-.06c0-3.6,2.55-6.54,6.09-6.54a7.75,7.75,0,0,1,5.37,2.37l2.94-3.39a10.835,10.835,0,0,0-8.28-3.24A10.673,10.673,0,0,0,139.02-10.5v.06A10.6,10.6,0,0,0,149.79.36ZM162.09,0h15.99V-4.11h-11.4V-8.52h9.9v-4.11h-9.9v-4.26h11.25V-21H162.09Z" transform="translate(0 24)" fill="#4b545a"></path></g></svg></a>
   </div>
+</div>
+<div class="d-md-none">
+  <button type="button" class="navbar-toggler searchbar-toggle" data-toggle="collapse" data-target="#searchbar-collapse" role="button" aria-expanded="false" aria-controls="searchbar-collapse">
 
-  <div class="d-md-none">
-    <button
-      type="button"
-      class="navbar-toggler searchbar-toggle"
-      data-toggle="collapse"
-      data-target="#searchbar-collapse"
-      role="button" aria-expanded="false" aria-controls="searchbar-collapse">
-
-      <i class="fa fa-search"></i><span class="sr-only visually-hidden">Toggle Search</span>
-    </button>
-  </div>
-
-  <!-- desktop menu -->
-  <div class="col-md-6 d-flex justify-content-end">
-    <nav class="navbar navbar-expand-md">
-      <div class="d-none d-md-inline">
-        <form
-          method="get"
-          class="searchbar-form form-inline ThunderstoneForm"
-          id="ThunderstoneSearchForm"
-          action="https://search3.nrel.gov/texis/search/">
-
-          <div class="form-group">
-            <label for="query" class="sr-only visually-hidden">Search theSOURCE</label>
-            <input TYPE="hidden" NAME="pr" value="metasource">
-            <input type="text" id="query" name="query"
-                   maxlength="2047"
-                   placeholder="Search theSOURCE"
-                   class="form-control">
-
-            <button type="submit" class="btn btn-default">Search</button>
-          </div>
-        </form>
-      </div>
-    </nav>
-  </div>
-  <!-- desktop menu -->
+    <i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Toggle Search</span>
+  </button>
 
   <!-- mobile menu -->
   <div class="col-md-6 d-flex justify-content-center mb-3">
     <div class="d-md-none">
       <div class="collapse navbar-collapse" id="searchbar-collapse">
-        <form
-          method="get"
-          class="searchbar-form form-inline ThunderstoneForm"
-          id="ThunderstoneSearchForm"
-          action="https://search3.nrel.gov/texis/search/">
+        <form method="get" class="searchbar-form form-inline ThunderstoneForm" id="ThunderstoneSearchForm" action="https://search3.nrel.gov/texis/search/">
 
           <div class="form-group">
-            <label for="query" class="sr-only visually-hidden">Search theSOURCE</label>
-            <input TYPE="hidden" NAME="pr" value="metasource">
-            <input type="text" id="query" name="query"
-                   maxlength="2047"
-                   placeholder="Search theSOURCE"
-                   class="form-control">
+            <label for="query" class="sr-only">Search theSOURCE</label>
+            <input type="hidden" name="pr" value="metasource">
+            <input type="text" id="query" name="query" maxlength="2047" placeholder="Search theSOURCE" class="form-control">
 
             <button type="submit" class="btn btn-default">Search</button>
           </div>
         </form>
 
 
-        <form action="https://thesource.nrel.gov/phonebook/index.html" method="post"
-              class="searchbar-form form-inline">
+        <form action="https://thesource.nrel.gov/phonebook/index.html" method="post" class="searchbar-form form-inline">
           <div class="form-group">
-            <label for="emp-search" class="sr-only visually-hidden">Search Employee Directory</label>
-            <input id="emp-search" type="text" placeholder="Search Employee Directory"
-                   name="zzsearch" class="form-control">
-            <button type="submit" class="btn btn-default">Search</button>
+            <label for="emp-search" class="sr-only">Test Search Employee Directory</label>
+            <input id="emp-search" type="text" placeholder="Test Search Employee Directory" name="zzsearch" class="form-control">
+            <button type="submit" class="btn btn-default">Test Search</button>
           </div>
         </form>
       </div>
     </div>
   </div>
+</div>
+<!-- end mobile menu -->
+<!-- desktop menu -->
+<div class="col-md-6 d-flex justify-content-end">
+  <nav class="navbar navbar-expand-md">
+    <div class="d-none d-md-inline">
+      <form method="get" class="searchbar-form form-inline ThunderstoneForm" id="ThunderstoneSearchForm" action="https://search3.nrel.gov/texis/search/">
 
-  <!-- end mobile menu -->
-
-
+        <div class="form-group">
+          <label for="query" class="sr-only">Search theSOURCE</label><input type="hidden" name="pr" value="metasource"><input type="text" id="query" name="query" maxlength="2047" placeholder="Search theSOURCE" class="form-control"><button type="submit" class="btn btn-default">Search</button>
+        </div>
+      </form>
+    </div>
+  </nav>
+</div>
+<!-- desktop menu -->
 {% endblock %}

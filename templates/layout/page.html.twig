@@ -105,7 +105,7 @@
 
 <!-- HEADER -->
 <div class="banner-site">
-    <div class="{{ container }}"><a href="https://thesource.nrel.gov/web-standards/index.html">{{ site_name }}</a></div>
+    <div class="{{ container }}"><a href="/">{{ site_name }}</a></div>
     {# Header #}
     {% if page.header %}
         {% block header %}
@@ -223,12 +223,23 @@
 
     </div>
 </div>
-{% if page.footer %}
-  {% block footer %}
-    <footer id="footer" role="contentinfo">
-      <div class="{{ container }}">
+{% block footer %}
+<footer id="footer">
+    <div class="{{ container }}">
+    <div class="row">
         {{ page.footer }}
-      </div>
-    </footer>
-  {% endblock %}
-{% endif %}
+        <div class="col pt-5">
+                <p><a href="https://thesource.nrel.gov">theSOURCE</a></p>
+                <p><a href="mailto:laura.michael@nrel.gov">Email Contact</a></p>
+                <ul class="social-links list-inline">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/nationalrenewableenergylab" aria-label="Follow NREL on Facebook"><span class="fa fa-facebook-square mr-2" aria-hidden="true"></span></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/nationalrenewableenergylab/" aria-label="Follow NREL on Instagram"><span class="fa fa-instagram mr-2" aria-hidden="true"></span></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/company/national-renewable-energy-laboratory" aria-label="Follow NREL on Linked In"><span class="fa fa-linkedin-square mr-2" aria-hidden="true"></span></a></li>
+                    <li class="list-inline-item"><a href="https://www.youtube.com/user/NRELPR/" aria-label="Follow NREL on YouTube"><span class="fa fa-youtube mr-2" aria-hidden="true"></span></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/nrel/" aria-label="Follow NREL on Twitter"><span class="fa fa-twitter mr-2" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}

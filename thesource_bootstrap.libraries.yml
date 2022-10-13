@@ -2,7 +2,6 @@ global-scripts:
   js:
     js/global.js : {}
     js/app.min.js : {}
-    js/jquery.iconomatic.min.js : {}
 
 global-styling:
   css:
