@@ -380,3 +380,13 @@ span.file {
     background-image: none;
     padding-left: 0px;
 }
+/* Override the path to non-existent images path in source.complete.css */
+.panel-heading > .panel-title >  .accordion-toggle {
+    background-image: url('../images/icon_minus.svg');
+    background-repeat: no-repeat;
+    background-position: 1% center;
+    background-size: 25px 25px;
+}
+.panel-heading > .panel-title >  .accordion-toggle.collapsed {
+    background-image: url('../images/icon_plus_blue.svg');
+}
