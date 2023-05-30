@@ -2,7 +2,7 @@ name: theSource Bootstrap
 type: theme
 description: theSource Bootstrap Barrio SubTheme.
 package: communications
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10
 base theme: bootstrap_barrio
 
 libraries:
