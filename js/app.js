@@ -154,17 +154,6 @@
 
 
 
-  /*
-   *  Label icons
-   */
-  $(document).ready(function(){
-    if(window.location.href.indexOf('cms.nrel.gov') == -1) {
-        $('body').iconomatic({
-             ajax       :  true
-            ,dataMode   :  true
-        });
-    }
-  });
 
 
   /*
