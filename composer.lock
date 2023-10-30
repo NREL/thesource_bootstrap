@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ffc780183d2826316dc2b3e17fb971da",
+    "content-hash": "617a21a9a2d5770cc2a85300a866b9d3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -492,6 +492,7 @@
         },
         {
             "name": "drupal/bootstrap_barrio",
+<<<<<<< HEAD
             "version": "5.5.12",
             "source": {
                 "type": "git",
@@ -520,29 +521,30 @@
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
+=======
+            "version": "dev-3391450-incorrect-path-to",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/issue/bootstrap_barrio-3391450",
+                "reference": "b808e123c126bb560cdb36355ab9dc1586f9744d"
+            },
+            "require": {
+                "twbs/bootstrap": "^5.0.0"
+            },
+            "type": "drupal-theme",
+>>>>>>> 18adf8f (Apply patch from Barrio MR branch - https://git.drupalcode.org/issue/bootstrap_barrio-3391450/-/tree/3391450-incorrect-path-to?ref_type=heads.)
             "license": [
                 "GPL-2.0-or-later"
             ],
             "authors": [
                 {
                     "name": "Alberto Siles",
-                    "homepage": "https://www.drupal.org/user/827704",
                     "email": "alberto@siles.pe"
-                },
-                {
-                    "name": "Ricardo.Castaneda",
-                    "homepage": "https://www.drupal.org/user/3520894"
-                },
-                {
-                    "name": "WillAcon",
-                    "homepage": "https://www.drupal.org/user/2824325"
                 }
             ],
             "description": "Bootstrap 5 base theme.",
             "homepage": "https://www.drupal.org/project/bootstrap_barrio",
-            "support": {
-                "source": "https://git.drupalcode.org/project/bootstrap_barrio"
-            }
+            "time": "2023-10-04T08:16:54+00:00"
         },
         {
             "name": "drupal/bootstrap_layouts",
@@ -5196,6 +5198,7 @@
         },
         {
             "name": "twbs/bootstrap",
+<<<<<<< HEAD
             "version": "v5.3.0",
             "source": {
                 "type": "git",
@@ -5206,6 +5209,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/twbs/bootstrap/zipball/60098ac499d30aa50575b0b7137391c06ef25429",
                 "reference": "60098ac499d30aa50575b0b7137391c06ef25429",
+=======
+            "version": "v5.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "344e912d04b5b6a04482113eff20ab416ff01048"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/344e912d04b5b6a04482113eff20ab416ff01048",
+                "reference": "344e912d04b5b6a04482113eff20ab416ff01048",
+>>>>>>> 18adf8f (Apply patch from Barrio MR branch - https://git.drupalcode.org/issue/bootstrap_barrio-3391450/-/tree/3391450-incorrect-path-to?ref_type=heads.)
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5246,7 +5261,11 @@
             ],
             "support": {
                 "issues": "https://github.com/twbs/bootstrap/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/twbs/bootstrap/tree/v5.3.0"
+=======
+                "source": "https://github.com/twbs/bootstrap/tree/v5.3.2"
+>>>>>>> 18adf8f (Apply patch from Barrio MR branch - https://git.drupalcode.org/issue/bootstrap_barrio-3391450/-/tree/3391450-incorrect-path-to?ref_type=heads.)
             },
             "transport-options": {
                 "ssl": {
@@ -5254,7 +5273,11 @@
                     "allow_self_signed": true
                 }
             },
+<<<<<<< HEAD
             "time": "2023-05-30T15:15:55+00:00"
+=======
+            "time": "2023-09-14T14:19:27+00:00"
+>>>>>>> 18adf8f (Apply patch from Barrio MR branch - https://git.drupalcode.org/issue/bootstrap_barrio-3391450/-/tree/3391450-incorrect-path-to?ref_type=heads.)
         },
         {
             "name": "twig/twig",
@@ -8696,7 +8719,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/bootstrap_barrio": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
