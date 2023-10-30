@@ -36,7 +36,7 @@
   "require-dev": {
     "drupal/console": "~1",
     "drush/drush": "*",
-    "drupal/core": "~9"
+    "drupal/core": "^9.4.15"
   },
   "repositories": {
     "drupal": {
