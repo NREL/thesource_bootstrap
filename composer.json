@@ -31,7 +31,7 @@
   },
   "require": {
     "drupal/bootstrap_layouts": "^5.1",
-    "drupal/bootstrap_barrio": "dev-3391450-incorrect-path-to"
+    "drupal/bootstrap_barrio": "^5.5"
   },
   "require-dev": {
     "drupal/console": "~1",
