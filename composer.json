@@ -39,10 +39,6 @@
     "drupal/core": "^9.4.15"
   },
   "repositories": {
-    "bootstrap_barrio": {
-      "type": "vcs",
-      "url": "https://git.drupalcode.org/issue/bootstrap_barrio-3391450"
-    },
     "drupal": {
       "type": "composer",
       "url": "https://packages.drupal.org/8"

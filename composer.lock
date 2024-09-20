@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0fd9041f9b782cc0ead04fc474c9750b",
+    "content-hash": "e2586f0aae506d9779e18f8e2b93a260",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -492,28 +492,57 @@
         },
         {
             "name": "drupal/bootstrap_barrio",
-            "version": "5.5.14",
+            "version": "5.5.16",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/bootstrap_barrio-3391450",
-                "reference": "da0ea4d7af93f5c5750bcdb54c03ce12f11a5822"
+                "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
+                "reference": "5.5.16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_barrio-5.5.16.zip",
+                "reference": "5.5.16",
+                "shasum": "c69cae4d197e7ae0c11acc276c9bd8a1ce1d31b7"
             },
             "require": {
+                "drupal/core": "^9.4 || ^10",
                 "twbs/bootstrap": "^5.0.0"
             },
             "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "5.5.16",
+                    "datestamp": "1701646126",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "authors": [
                 {
                     "name": "Alberto Siles",
+                    "homepage": "https://www.drupal.org/user/827704",
                     "email": "alberto@siles.pe"
+                },
+                {
+                    "name": "ricardo.castaneda",
+                    "homepage": "https://www.drupal.org/user/3520894"
+                },
+                {
+                    "name": "WillAcon",
+                    "homepage": "https://www.drupal.org/user/2824325"
                 }
             ],
             "description": "Bootstrap 5 base theme.",
             "homepage": "https://www.drupal.org/project/bootstrap_barrio",
-            "time": "2023-10-02T03:52:14+00:00"
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap_barrio"
+            }
         },
         {
             "name": "drupal/bootstrap_layouts",
