@@ -30,13 +30,12 @@
     }
   },
   "require": {
-    "drupal/bootstrap_layouts": "^5.1",
-    "drupal/bootstrap_barrio": "dev-3391450-incorrect-path-to"
+    "drupal/bootstrap_layouts": "^5.4",
+    "drupal/bootstrap_barrio": "^5.1"
   },
   "require-dev": {
-    "drupal/console": "~1",
     "drush/drush": "*",
-    "drupal/core": "^9.4.15"
+    "drupal/core": "^10.3"
   },
   "repositories": {
     "bootstrap_barrio": {
